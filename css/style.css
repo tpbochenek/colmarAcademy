@@ -1,0 +1,208 @@
+body {
+  font-size: 16px;
+  margin: 0px;
+  border: 0px;
+}
+
+div {
+
+  display: block;
+}
+
+/* Header */
+
+header {
+  background-color: white;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+  font-size: 2.5rem;
+}
+
+header #logo {
+  float: left;
+  width: 50%;
+  height: auto;
+}
+
+header span {
+  display: flex;
+  align-items: center;
+
+}
+
+nav {
+  display: flex;
+  align-items: flex-end;
+  width: 50%;
+  height: auto;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+ul {
+  list-style-type: none;
+  align-items: center;
+
+}
+
+li {
+  float: right;
+  padding-right: 1rem;
+  color: black;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Start */
+
+#start {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+#start .banner {
+  width: 60%;
+  height: auto;
+  margin-left: 0px;
+  margin-top: 64px;
+  position: relative;
+}
+
+.banner img {
+  padding: 32px 24px 32px 24px;
+  width: auto;
+  height: auto;
+
+}
+
+#start .description  {
+  position: relative;
+  display: flex;
+  width: 423px;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 16px;
+  flex-direction: column;
+
+}
+
+#start .description h1 {
+  font-size: 3rem;
+  text-align: left;
+}
+
+#start .description p {
+  font-size: 1rem;
+  text-align: left;
+}
+
+#start .description span {
+  font-size: 1.5rem;
+  background-color: darkgray;
+  width: 100%;
+  padding: 8px 0px;
+  text-align: center;
+}
+
+/* Information */
+
+#information {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+}
+
+#information .information-banner {
+  width: 60%;
+
+}
+#information .information-banner img {
+  padding: 32px 24px 32px 24px;
+}
+
+#information #information-side {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding-top: 32px;
+}
+
+#information #information-side .container {
+  width: 423px;
+
+
+}
+
+/* Learn */
+
+#learn {
+  position: relative;
+  margin: 0px;
+}
+#learn h2 {
+  text-align: center;
+}
+
+#courses {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+#courses .container {
+  width: 30%;
+}
+
+
+
+/* Thesis */
+#thesis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#thesis-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#thesis-video {
+  position: relative;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+}
+
+#thesis h2 {
+  text-align: center;
+}
+
+
+
+#thesis-video .coontainer {
+  
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+
+}
+
+/* Footer */
