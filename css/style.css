@@ -1,3 +1,4 @@
+
 body {
   font-size: 16px;
   margin: 0;
@@ -5,56 +6,118 @@ body {
   font-family: Helvetica;
   height: auto;
   background-color: #FFFFFF;
-  width: auto;
+  width: 100%;
   color: #4A4A4A;
 
 }
+@media only screen and (max-width: 980px) and (min-width: 786px) {
+body {
+    font-size: 12px;
+  }
+.nav .nav-mobile {
+  display: none;
+}
+}
+@media only screen and (max-width: 321px){
+  body {
+    font-size: 8px;
+  }
 
+  .header .logo span {
+    display: none;
+  }
+
+  .nav .nav-desktop {
+    display: none;
+  }
+}
 div {
+  /*
   border: 1px solid #D8D8D8;
+  */
   display: block;
 }
 
 h1{
-  font-size: 6rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
 h2 {
+  font-size: 2.5rem;
   text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: left;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding:  0.5rem 0 0.5rem 0;
+}
+
+p {
+ font-size: 1rem;
+ padding: 1rem 0 1rem 0;
+ text-align: left;
+
+}
+
+strong {
+  font-weight: bold;
 }
 
 
 
 /* Header */
 
-.header {
+header {
   background-color: white;
   display: flex;
-  position: absolute;
+  position: relative;
   align-items: center;
-  height: 64px;
+  height: 4rem;
   width: 100%;
-  font-size: 2.5rem;
+  font-size: 2rem;
   flex-grow: 3;
   margin: 0;
 
 }
 
-.header .logo {
+header .logo {
   float: left;
   width: 50%;
   height: auto;
+  display: inline-flex;
 }
 
-.header .logo img {
-  height: 56px;
+header .logo img {
+  height: 3.5rem;
   width: auto;
 }
 
-.header span {
+header span {
   display: flex;
   align-items: center;
+  font-size: 1rem;
 
 }
 
@@ -64,25 +127,55 @@ h2 {
   height: auto;
   align-items: center;
   justify-content: flex-end;
+
 }
 
 ul {
   list-style-type: none;
   align-items: center;
-
+  float: right;
 }
 
 li {
   float: right;
   padding-right: 1rem;
   color: black;
+  font-size: 1rem;
 }
 
 li a {
   text-decoration: none;
   color: black;
-  padding-right: 16px;
+  padding-right: 1rem;
 }
+
+li img {
+  display: none;
+}
+@media only screen and (max-width: 980px) and (min-width: 786px) {
+body {
+    font-size: 12px;
+  }
+.nav .nav-mobile {
+  display: none;
+}
+}
+@media only screen and (max-width: 321px){
+  body {
+    font-size: 8px;
+  }
+
+  .header .logo span {
+    display: none;
+  }
+
+  .nav .nav-desktop {
+    display: none;
+  }
+}
+
+
+
 
 /* Start */
 
@@ -93,7 +186,7 @@ li a {
   position: inherit;
   width: 100%;
   background-color: #D8D8D8;
-  margin: 0px;
+  margin: 0;
 
 }
 
@@ -101,15 +194,15 @@ li a {
   width: 60%;
   height: auto;
   margin-left: 0;
-  margin-top: 64px;
+  margin-top: 0;
   position: relative;
-  padding: 32px 24px 32px 24px;
+  padding: 3rem 2.5rem 3rem 2.5rem;
 
 
 }
 
-.banner img {
-  width: 95%;
+.start .banner img {
+  width: 100%;
 }
 
 .start .description  {
@@ -117,96 +210,92 @@ li a {
   display: flex;
   width: 40%;
   height: auto;
-  padding-left: 16px;
+  flex-shrink: 3;
   flex-direction: column;
   float: left;
   color: #4A4A4A;
-
-
-}
-
-.start .description,h1 {
-  font-size: 6rem;
+  font-size: 3rem;
   text-align: left;
-  font-weight: bold;
-  height: auto;
-  width: 40%;
+  line-height: 4rem;
+  padding-top: 3rem;
+
 
 }
 
-.start .description p {
+
+.start .description {
   font-size: 3rem;
   text-align: left;
   width: 40%;
-  line-height: 5rem;
-  padding-top: 32px;
+  line-height: 4rem;
+  padding-top: 3rem;
+  flex-shrink: 2;
 }
 
 .start .description span {
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
   width: 40%;
-  padding: 8px;
+  padding: 0.5rem;
   text-align: center;
   background-color: #4A4A4A;
 
 }
-
+@media only screen and (min-width:768px) and (max-width: 1104px){
+  div {
+    font-size: 70%;
+  }
+}
 /* Information */
 
 .information {
   display: flex;
   flex-direction: row;
   position: relative;
+  width: 100%;
 
 }
 
 .information .information-banner {
   width: 60%;
-  padding-left: 24px;
+  height: auto;
+  margin-left: 0;
+  margin-top: 0;
+  position: relative;
+  padding: 3rem 2.5rem 3rem 2.5rem;
 
 }
 .information .information-banner img {
-  width: 95%;
-  padding: 32px 24px 32px 0;
-}
-
-.information .information-banner,h1 {
-  font-size: 6rem;
-  font-weight: bold;
-  display: inline-block;
-
+  width: 100%;
 
 }
+
 
 .information .information-banner p {
-  font-size: 3rem;
-  padding-top: 24px;
+
+  padding-top: 2.5rem;
 }
 
 .information .information-side {
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin-top: 32px;
+  margin-top: 2.5rem
 
-}
 
-.information .information-side h3 {
-  font-size: 4rem;
-  font-weight: bold;
-  padding-top: 250px;
 }
 
 .information .information-side p {
-  font-size: 2rem;
+  font-size: 1rem;
   padding: 32px 32px;
+  flex-shrink: 2;
 }
 
 .information .information-side span {
-  font-size: 2rem;
+  font-size: 1rem;
   color: mediumblue;
   padding-top: 32px;
+  flex-shrink: 2;
 }
 
 .information .information-side #orientation {
@@ -249,22 +338,25 @@ li a {
 }
 /* Learn */
 
-#learn {
+.learn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
   margin: 0;
   background-color: #D8D8D8;
+  width: 100%;
+
 }
 
-#learn,h1 {
+.learn {
   text-align: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
-
-
-
-.courses {
+.learn .courses {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -274,34 +366,31 @@ li a {
   position: relative;
 }
 
-.courses .container {
+.learn .courses .container {
   width: 30%;
   background-color: #FFF;
-  margin: 32px;
-  text-align: left;
+  margin: 16px;
+  align-self: flex-start;
+
 }
 
-.courses .container img {
+.learn .courses .container img {
   width: 100%;
+
 }
 
-.courses .container h3 {
-  font-size: 3rem;
-  padding: 16px;
-  font-weight: bold;
+.learn .courses .lh4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.courses .container h4 {
-  font-size: 2.5rem;
-  text-decoration: uppercase;
-  padding:  8px 0 8px 16px;
+.learn .courses .lh5 {
+  padding-left: 1rem;
 }
 
-.courses .container p {
-  font-size: 2rem;
-  padding: 0 0 24px 16px;
+.learn .courses .lp {
+  padding-left: 1rem;
 }
-
 
 
 /* Thesis */
@@ -313,11 +402,6 @@ li a {
   width: 100%;
 }
 
-.thesis,h1 {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  text-align: center;
-}
 .thesis-container {
   display: flex;
   flex-direction: row;
@@ -332,25 +416,22 @@ li a {
   display: flex;
   flex-direction: column;
   width: 60%;
-  padding-left: 24px;
+  padding: 3rem 2.5rem 3rem 2.5rem;
 }
 
 
 
 #thesis-video video {
   width: 100%;
+  height: auto;
   padding-right: 16px;
 }
 
-#thesis-video h3 {
-  font-size: 3rem;
-  font-weight: bold;
-  padding: 24px 0;
-}
 
-#thesis-video p {
+
+#thesis-video {
   font-size: 2rem;
-  padding-bottom: 32px;
+  padding-bottom: 3rem;
 }
 
 
@@ -360,23 +441,10 @@ li a {
   width: 40%;
   height: auto;
   justify-content: flex-start;
+  margin-top: 3rem
 
 }
 
-
-.thesis .thesis-container .thesis-side h3 {
-  font-size: 4rem;
-  font-weight: bold;
-  padding-top: 250px;
-
-}
-
-.thesis .thesis-container .thesis-side p {
-  font-size: 2rem;
-  padding-top: 32px;
-  display: inline-block;
-
-}
 
 .thesis .thesis-container .thesis-side #fisma {
   height: auto;
@@ -410,8 +478,12 @@ li a {
 
 .footer {
   height: 4rem;
-  font-size: 2rem;
+  font-size: 1rem;
+  width: 100%;
+  border-top: 1px solid #D8D8D8;
+  margin: 0;
 }
+
 
 .footer p {
   padding-top: 1rem;
