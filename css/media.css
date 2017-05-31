@@ -1,0 +1,27 @@
+@media only screen and (max-width: 980px) and (min-width: 786px) {
+body {
+    font-size: 12px;
+  }
+div {
+  width: 75%;
+}
+nav .nav-mobile {
+  display: none;
+}
+}
+@media only screen and (max-width: 321px) {
+  body {
+    font-size: 8px;
+  }
+div {
+  width: 50%;
+}
+
+  .header .logo span {
+    display: none;
+  }
+
+  nav .nav-desktop {
+    display: none;
+  }
+}

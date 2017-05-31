@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colmar Academy</title>
     <link href="./css/reset.css" type="text/css" rel="stylesheet">
+
     <link href="./css/style.css" type="text/css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css"
-    rel="stylesheet" type="text/css" >
+    <link href="./css/media.css" type="text/css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -15,19 +15,7 @@
         <img src="./resources/images/ic-logo.svg" alt="Logo">
         <span><strong>Colmar</strong>Academy</span>
       </div>
-      <div class="nav" class="nav-desktop" role="presentation">
-        <ul>
-          <li><a href="./support/campus.html">
-            On campus<img src="./resources/images/ic-on-campus.svg" alt="ic-on-campus" role="button"></a></li>
-          <li><a href="./support/online.html">
-            Online<img src="./resources/images/ic-online.svg" alt="ic-online" role="button"></a></li>
-          <li><a href="./support/companies.html">
-            For companies</a></li>
-          <li><a href="./support/signin.html">
-            Sign in<img src="./resources/images/ic-login.svg" alt="ic-login" role="button"></a></li>
-        </ul>
-      </header>
-      <div class="nav" class="nav-mobile" role="presentation">
+      <nav class="nav-mobile" role="presentation">
         <ul>
           <li><a href="./support/campus.html">
           <img src="./resources/images/ic-on-campus.svg" alt="ic-on-campus" role="button"></a></li>
@@ -38,8 +26,21 @@
           <li><a href="./support/signin.html">
           <img src="./resources/images/ic-login.svg" alt="ic-login" role="button"></a></li>
         </ul>
-      </div>
-    </div>
+      </nav>
+      <nav class="nav-desktop" role="presentation">
+        <ul>
+          <li><a href="./support/campus.html">
+            On campus<img src="./resources/images/ic-on-campus.svg" alt="ic-on-campus" role="button"></a></li>
+          <li><a href="./support/online.html">
+            Online<img src="./resources/images/ic-online.svg" alt="ic-online" role="button"></a></li>
+          <li><a href="./support/companies.html">
+            For companies</a></li>
+          <li><a href="./support/signin.html">
+            Sign in<img src="./resources/images/ic-login.svg" alt="ic-login" role="button"></a></li>
+        </ul>
+
+
+    </header>
     <div class="start">
       <div class="banner">
         <img src="./resources/images/banner.jpg" alt="banner">
@@ -65,19 +66,19 @@
           <img src="./resources/images/information-orientation.jpg" alt="orientation">
           <h3>Orientation date</h3>
           <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
-          <span>Read more</span>
+          <span><a href="#readMore">Read more</a></span>
         </div>
         <div id="campus" class="campus-container">
           <img src="./resources/images/information-campus.jpg" alt="campus">
           <h3>Our Campus</h3>
           <p>Find which campus is close by you</p>
-          <span>Read more</span>
+          <span><a href="#readMore">Read more</a></span>
         </div>
         <div id="guest-lecture" class="lecture-container">
           <img src="./resources/images/information-guest-lecture.jpg" alt="lecture">
           <h3>Our guest lecture</h3>
           <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-          <span>Read more</span>
+          <span><a href="#readMore">Read more</a></span>
         </div>
       </div>
     </div>
